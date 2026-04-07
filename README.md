@@ -100,7 +100,7 @@ src/
 
 ## Design System
 
-O design segue as diretrizes do [UI/UX Pro Max Skill v2.0](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill):
+O design segue as diretrizes abaixo:
 
 - **Layout**: Bootstrap 5 grid system (container, row, col-*) + utilities (d-flex, gap-*, text-*, fw-*, etc.)
 - **Paleta**: SaaS/Dev Tools com semantic color tokens (light e dark)
