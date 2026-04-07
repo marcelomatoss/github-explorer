@@ -65,39 +65,6 @@ npm run build
 npm run preview
 ```
 
-## Deploy
-
-### Vercel (recomendado)
-
-```bash
-# Instalar Vercel CLI
-npm install -g vercel
-
-# Fazer deploy (siga as instrucoes de login)
-vercel
-
-# Deploy de producao
-vercel --prod
-```
-
-### Surge
-
-```bash
-# Instalar Surge
-npm install -g surge
-
-# Build e deploy
-npm run build
-cp dist/index.html dist/200.html
-surge dist github-explorer-desbravador.surge.sh
-```
-
-### Netlify
-
-Conecte o repositorio no painel do Netlify com:
-- **Build command:** `npm run build`
-- **Publish directory:** `dist`
-
 ## Estrutura do projeto
 
 ```

@@ -74,6 +74,83 @@ select:focus-visible {
   color: var(--color-on-primary);
 }
 
+/* ==========================================================================
+   Bootstrap Dark Mode Overrides
+   Garante contraste >= 4.5:1 no tema escuro
+   ========================================================================== */
+
+[data-theme="dark"] body,
+[data-theme="dark"] .text-body {
+  color: var(--color-foreground) !important;
+}
+
+[data-theme="dark"] .text-muted {
+  color: var(--color-muted-foreground) !important;
+}
+
+[data-theme="dark"] .lead {
+  color: var(--color-muted-foreground);
+}
+
+[data-theme="dark"] .card {
+  background: var(--color-card);
+  border-color: var(--color-card-border);
+  color: var(--color-card-foreground);
+}
+
+[data-theme="dark"] .card-footer {
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-foreground);
+}
+
+[data-theme="dark"] .form-control::placeholder {
+  color: var(--color-muted-foreground);
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-ring);
+}
+
+[data-theme="dark"] .btn-outline-secondary {
+  color: var(--color-muted-foreground);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .btn-outline-secondary:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-foreground);
+  border-color: var(--color-border-hover);
+}
+
+[data-theme="dark"] .btn-dark {
+  background: var(--color-foreground);
+  color: var(--color-background);
+}
+
+[data-theme="dark"] .alert-danger {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #FECACA;
+}
+
+[data-theme="dark"] .border,
+[data-theme="dark"] .border-bottom,
+[data-theme="dark"] .border-top {
+  border-color: var(--color-border) !important;
+}
+
+[data-theme="dark"] .btn-link {
+  color: var(--color-primary);
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,
